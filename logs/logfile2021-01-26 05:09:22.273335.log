@@ -1,0 +1,92 @@
+Main execution started at: 2021-01-26 05:09:22.273474
+Accure Battery data - Loading File....
+                       I    V   T_max   T_min  SOC
+time                                              
+2017-03-28 12:52:00  0.0  0.0 -273.15 -273.15  0.0
+2017-03-28 12:53:00  0.0  0.0 -273.15 -273.15  0.0
+2017-03-28 12:54:00  0.0  0.0 -273.15 -273.15  0.0
+2017-03-28 12:55:00  0.0  0.0 -273.15 -273.15  0.0
+2017-03-28 12:56:00  0.0  0.0 -273.15 -273.15  0.0
+Processing Raw Dataframe
+
+Column names and datatypes:
+I        float64
+V        float64
+T_max    float64
+T_min    float64
+SOC      float64
+dtype: object
+
+Removing outliers....
+
+
+Hourly aggregation....
+
+                             I          V      T_max      T_min        SOC
+time                                                                      
+2017-05-08 22:00:00  -1.017000  52.146250  22.106250  21.575000  34.000000
+2017-05-08 23:00:00  -1.055375  52.071656  22.240625  21.631250  34.000000
+2017-05-09 01:00:00 -19.441500  53.728000  30.700000  28.600000  92.500000
+2017-05-09 02:00:00  -6.034000  52.618111  30.583333  28.405556  79.777778
+2017-05-09 03:00:00  -7.201543  53.940514  31.941429  29.235714  97.685714
+
+Creating avg. temp, energy and charge as new features....
+
+
+Dropping redundant columns....
+
+Final Feature list + target columns
+
+                             I          V  ...          E         Q
+time                                       ...                     
+2017-05-08 22:00:00  -1.017000  52.146250  ...  51.129250  0.980497
+2017-05-08 23:00:00  -1.055375  52.071656  ...  51.016281  0.979732
+2017-05-09 01:00:00 -19.441500  53.728000  ...  34.286500  0.638150
+2017-05-09 02:00:00  -6.034000  52.618111  ...  46.584111  0.885325
+2017-05-09 03:00:00  -7.201543  53.940514  ...  46.738971  0.866491
+
+[5 rows x 6 columns]
+
+Saving processed data to csv....
+
+---------------------------------------------------------------
+
+
+Number of features...
+
+(19970, 5)
+
+Model: Random Forest Regressor
+***********************************
+Best parameters found:  {'n_estimators': 500, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 'auto', 'max_depth': 12, 'bootstrap': True}
+Lowest RMSE found:  3.2728612971726383
+
+Top features for the model
+
+V        0.889652
+I        0.063755
+Q        0.038198
+T_avg    0.005919
+E        0.002477
+dtype: float64
+
+Running Prediction on test data
+************************************
+
+Number of features...
+
+(19970, 5)
+
+Train set error (RMSE):  1.9407132130541205
+
+Test set error (RMSE):  3.415851260999669
+
+Train set explained variance (R^2):  0.99661382642277
+
+Test set explained variance (R^2):  0.9895003195583097
+
+Output saved as submission.csv
+Main execution ended at:         2021-01-26 05:43:03.397531.
+Total execution duration: 0:33:41.124057.
+**************************************************************************************************
+**************************************************************************************************

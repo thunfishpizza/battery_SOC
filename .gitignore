@@ -1,0 +1,9 @@
+#ignore jupyter notebook files
+.ipynb_checkpoints/
+__pycache__/
+
+
+
+
+
+
