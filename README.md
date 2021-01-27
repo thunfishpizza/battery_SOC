@@ -23,11 +23,11 @@ The "main.py" script executes the whole workflow and saves the output as a logfi
 
 ├── main.py                             <- Main python file for execution.
 │
+├── exploration.ipynb                   <- Jupyter Notebook to perform exploratory analysis, feature engineering,
+|                                           model selection, parameter tuning and validation.
+│
 ├── model                               <- Trained and serialized RF model.
 │
-├── notebook
-│   ├── exploration.ipynb               <- Jupyter Notebook to perform exploratory analysis, feature engineering,
-|                                           model selection, parameter tuning and validation.
 │
 ├── data
 │   ├── raw                             <- The original, immutable data dump.
