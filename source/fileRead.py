@@ -19,5 +19,5 @@ def import_data():
     df = df.set_index('time')
     df = df.sort_index()
 
-    print('Accure Battery data - Loading File....', df.head(), sep='\n')
+    print('Battery data - Loading File....', df.head(), sep='\n')
     return df
