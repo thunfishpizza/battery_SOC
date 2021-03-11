@@ -1,5 +1,5 @@
-## Accure Battery Intelligence Case Study
-Data science case study for battery data, based on data provided by Accure Battery Intelligene GmbH as part of the data science assignment. The workflow includes problem definition, exploratory analysis and implementation of a predictive model for battery state of charge. This project has been carried out in approximately 2-3 days.
+## Battery Intelligence Case Study
+Data science case study for battery data, based on data obtained from RWTH Aachen. The workflow includes problem definition, exploratory analysis and implementation of a predictive model for battery state of charge. This project has been carried out in approximately 2-3 days.
 
 ## Environment
 The stack is set up on a 64-bit MacOs11 desktop with Conda 4.9.2 and Python 3.7.6. A new environment is created and activated via terminal. To recreate:
