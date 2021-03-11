@@ -4,9 +4,9 @@ Data science case study for battery data, obtained from RWTH Aachen data reposit
 ## Environment
 The stack is set up on a 64-bit MacOs11 desktop with Conda 4.9.2 and Python 3.7.6. A new environment is created and activated via terminal. To recreate:
 1. Clone the project Git repository.
-2. Create a conda environment for the accure project from within the project's root directory:
-> conda env create --force -f environment.yml -n accure <br/>
-> conda activate accure
+2. Create a conda environment for the project from within the project's root directory:
+> conda env create --force -f environment.yml -n battery <br/>
+> conda activate battery
 
 The "main.py" script executes the whole workflow and saves the output as a logfile in data/output. Total execution time is around 10 mins.
 > python main.py
